@@ -196,15 +196,92 @@ input[type="number"] {
   .container {
     padding: 1.25rem 0;
 
+    @media (max-width: 576px) {
+      padding: 1.5rem 1rem;
+    }
+
+    /* ANIMATED X */
+    .navbar-toggler.x {
+      border: none;
+      padding: 0;
+
+      &:focus {
+        outline: none;
+      }
+
+      &[aria-expanded="true"] {
+        .icon-bar {
+          &:nth-of-type(1) {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: 10% 10%;
+            -ms-transform-origin: 10% 10%;
+            transform-origin: 10% 10%;
+          }
+          &:nth-of-type(2) {
+            opacity: 0;
+            filter: alpha(opacity=0);
+          }
+          &:nth-of-type(3) {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 10% 90%;
+            -ms-transform-origin: 10% 90%;
+            transform-origin: 10% 90%;
+          }
+        }
+      }
+
+      .icon-bar {
+        width: 26px;
+        display: block;
+        height: 3px;
+        background-color: #03ac0e;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+
+        & + .icon-bar {
+          margin-top: 4px;
+        }
+
+        &:nth-of-type(1) {
+          -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+          transform: rotate(0);
+        }
+
+        &:nth-of-type(2) {
+          opacity: 1;
+          filter: alpha(opacity=100);
+        }
+
+        &:nth-of-type(3) {
+          -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+          transform: rotate(0);
+        }
+      }
+    }
+
     a.navbar-brand {
       color: #03ac0e !important;
       font-weight: 600;
       line-height: 20px;
       letter-spacing: 1px;
+
+      @media (max-width: 320px) {
+        font-size: 1.1rem;
+      }
     }
 
     .navbar-collapse {
       ul.navbar-nav {
+        @media (max-width: 576px) {
+          margin-top: 1rem;
+        }
+
         li.nav-item {
           font-family: "open sans", sans-serif;
 
@@ -214,6 +291,14 @@ input[type="number"] {
             line-height: 20px;
             letter-spacing: 0.5px;
             padding: 0.5rem 1.25rem;
+
+            @media (max-width: 576px) {
+              padding: 0.5rem 0;
+            }
+
+            @media (max-width: 320px) {
+              font-size: 14px;
+            }
           }
 
           a.nav-link.active {
@@ -225,6 +310,10 @@ input[type="number"] {
             color: #fff;
             background: #03ac0e;
             border: 1px solid #03ac0e;
+
+            @media (max-width: 576px) {
+              margin: 0.75rem 0 0.5rem;
+            }
           }
         }
       }
@@ -1022,9 +1111,19 @@ footer {
   padding: 6rem 0 4rem;
   color: #5e5e5e;
 
+  @media (max-width: 576px) {
+    padding: 4rem 1rem 2.5rem;
+  }
+
   .container {
     .box-logo {
       margin: 0 0 2.5rem;
+
+      @media (max-width: 576px) {
+        margin: 0 0 1.5rem;
+        display: flex;
+        justify-content: center;
+      }
 
       a {
         font-size: 1.15rem;
@@ -1042,8 +1141,18 @@ footer {
     align-items: center;
     margin: 0 0 1.5rem;
 
+    @media (max-width: 576px) {
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+    }
+
     .icon-footer {
       margin: 0 1rem 0 0;
+
+      @media (max-width: 576px) {
+        margin: 0;
+      }
     }
 
     .text-footer {
@@ -1066,8 +1175,17 @@ footer {
     display: flex;
     align-items: center;
 
+    @media (max-width: 576px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
     .icon-footer {
       margin: 0 1rem 0 0;
+
+      @media (max-width: 576px) {
+        margin: 0;
+      }
     }
 
     .text-footer {
@@ -1089,6 +1207,11 @@ footer {
   .box-store {
     margin: 0 0 0.5rem;
 
+    @media (max-width: 576px) {
+      text-align: center;
+      margin: 0 0 2.5rem;
+    }
+
     .text-head {
       margin: 0 0 0.5rem;
       color: #042306;
@@ -1103,14 +1226,6 @@ footer {
           margin-right: 0.25rem;
         }
       }
-    }
-  }
-
-  p.m-0.mont-light {
-    font-size: 0.85rem;
-
-    @media (min-width: 768px) {
-      font-size: 1rem;
     }
   }
 }
