@@ -89,46 +89,100 @@
     </nav>
 
     <section class="jumbotron banner">
-        <div class="container">
-            <img src="assets/images/leads-banner.png" class="lazy img-fluid cover-banner" alt="cover">
-            <div class="row">
-                <div class="col-md-8 text-banner">
-                    <h1 class="mont-light">TITLE LOREM IPSUM</h1>
-                    <p class="lead text-muted mont-light">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut.
-                    </p>
-                </div>
-                <div class="col-md-4 form-banner">
-                    <form class="m-0">
-                        <div class="form-group mb-3">
-                            <span>
-                                <i class="bi bi-person-circle"></i>
-                            </span>
-                            <input type="text" class="form-control mont-light" id="nameFormTop" aria-describedby="name"
-                                placeholder="Full Name">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-12 text-banner">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/smarthome/bg-home.png" class="lazy img-fluid cover" alt="cover">
+                                <div class="desc-banner">
+                                    <div class="text-head">We Design & Provide 1</div>
+                                    <div class="text-desc">
+                                        Smarthome solutions that guarantes green
+                                        eficient, secure benefits
+                                    </div>
+                                    <div class="box-button">
+                                        <a class="btn btn-success btn-green" href="#">
+                                            Find Product Here
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/smarthome/bg-home.png" class="lazy img-fluid cover" alt="cover">
+                                <div class="desc-banner">
+                                    <div class="text-head">We Design & Provide 2</div>
+                                    <div class="text-desc">
+                                        Smarthome solutions that guarantes green
+                                        eficient, secure benefits
+                                    </div>
+                                    <div class="box-button">
+                                        <a class="btn btn-success btn-green" href="#">
+                                            Find Product Here
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/smarthome/bg-home.png" class="lazy img-fluid cover" alt="cover">
+                                <div class="desc-banner">
+                                    <div class="text-head">We Design & Provide 3</div>
+                                    <div class="text-desc">
+                                        Smarthome solutions that guarantes green
+                                        eficient, secure benefits
+                                    </div>
+                                    <div class="box-button">
+                                        <a class="btn btn-success btn-green" href="#">
+                                            Find Product Here
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <span>
-                                <i class="bi bi-envelope"></i>
-                            </span>
-                            <input type="email" class="form-control mont-light" id="emailFormTop"
-                                aria-describedby="emailHelp" placeholder="name@email.com">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="col-12 col-md-12 form-banner">
+                        <div class="text-form-top">
+                            <p class="head-text poppins">
+                                Hi, please fill out the form below, we will give you the right choice!
+                            </p>
                         </div>
-                        <div class="form-group mb-3">
-                            <select class="form-select mont-light" id="exampleFormControlSelect1"
-                                aria-label="Default select example">
-                                <option>Lorem Ipsum</option>
-                                <option>Lorem Ipsum</option>
-                                <option>Lorem Ipsum</option>
-                                <option>Lorem Ipsum</option>
-                                <option>Lorem Ipsum</option>
-                            </select>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-secondary mont-light radius-0">Send</button>
-                        </div>
-                    </form>
+                        <form class="form-inline m-0 shadow poppins">
+                            <div class="form-group col-12 col-sm-3">
+                                <label for="inputName" class="form-label poppins">Name</label>
+                                <input type="text" class="form-control poppins" id="nameForm" aria-describedby="name"
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="form-group col-12 col-sm-3">
+                                <label for="inputPhone" class="form-label poppins">Phone Number</label>
+                                <input type="number" class="form-control poppins" id="phoneNumber"
+                                    aria-describedby="phone" placeholder="Enter Phone Number">
+                            </div>
+                            <div class="form-group col-12 col-sm-3">
+                                <label for="inputEmail" class="form-label poppins">Email</label>
+                                <input type="email" class="form-control poppins" id="emailForm" aria-describedby="email"
+                                    placeholder="Enter Your Email">
+                            </div>
+                            <div class="form-group col-12 col-sm-3">
+                                <label for="inputCity" class="form-label poppins">City</label>
+                                <select class="form-select mont-light" id="selectCustom">
+                                    <option>City</option>
+                                    <option>Jakarta</option>
+                                    <option>Bekasi</option>
+                                    <option>Depok</option>
+                                    <option>Bogor</option>
+                                </select>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-green poppins">
+                                        Continue
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,65 +190,33 @@
 
     <section class="section-one py-5">
         <div class="container">
-            <h1 class="title-head text-center mont-bold">TITLE LOREM IPSUM</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="assets/images/img-square.png" class="lazy img-fluid" alt="thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title mont-medium fs-16">LOREM IPSUM A</h5>
-                            <p class="card-text open-sans fs-14">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <div class="box-section poppins">
+                <div class="row">
+                    <div class="col-12 col-md-4 item-gs">
+                        <div class="box-iconic">
+                            <img src="assets/images/smarthome/ic-green.png" class="lazy img-fluid" alt="icon">
+                            <p class="head-text poppins">Green</p>
+                            <p class="desc poppins">
+                                Smart Home Green solution that delivers Energy Saving and Sustainability
                             </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button"
-                                        class="btn btn-sm mont-light btn-outline-secondary fs-14">Button</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        <i class="bi bi-play-fill"></i>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="assets/images/img-square.png" class="lazy img-fluid" alt="thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title mont-medium fs-16">LOREM IPSUM B</h5>
-                            <p class="card-text open-sans fs-14">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <div class="col-12 col-md-4 item-gs">
+                        <div class="box-iconic">
+                            <img src="assets/images/smarthome/ic-efficient.png" class="lazy img-fluid" alt="icon">
+                            <p class="head-text poppins">Efficient</p>
+                            <p class="desc poppins">
+                                Automation that provides Efficiency and Convenience anytime
                             </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button"
-                                        class="btn btn-sm btn-outline-secondary mont-light fs-14">Button</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        <i class="bi bi-play-fill"></i>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="assets/images/img-square.png" class="lazy img-fluid" alt="thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title mont-medium fs-16">LOREM IPSUM C</h5>
-                            <p class="card-text open-sans fs-14">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <div class="col-12 col-md-4 item-gs">
+                        <div class="box-iconic">
+                            <img src="assets/images/smarthome/ic-secured.png" class="lazy img-fluid" alt="icon">
+                            <p class="head-text poppins">Secured</p>
+                            <p class="desc poppins">
+                                System that ensures Secured home and Peace of mind
                             </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button"
-                                        class="btn btn-sm btn-outline-secondary mont-light fs-14">Button</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        <i class="bi bi-play-fill"></i>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -202,21 +224,57 @@
         </div>
     </section>
 
-    <section class="section-two bg-light py-5">
+    <section class="section-two py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7 thumb-img">
-                    <img src="assets/images/img-square-2.png" class="lazy img-fluid thumbs" alt="thumbnail">
-                </div>
-                <div class="col-md-5 desc-right">
-                    <h5 class="title mont-bold">TITLE LOREM IPSUM</h5>
-                    <p class="text-desc mont-light">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+            <p class="title-head text-center">Why Choose Us?</p>
+            <div class="box-section poppins">
+                <div class="row">
+                    <div class="col-12 col-md-6 item-gs">
+                        <div class="box-iconic">
+                            <img src="assets/images/smarthome/ic-system.png" class="lazy img-fluid" alt="icon">
+                            <p class="head-text poppins">System and Product Offering</p>
+                            <p class="desc poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range of aspects of
+                                residential and commercial applications: including Security & Control.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 item-gs">
+                        <div class="box-iconic">
+                            <img src="assets/images/smarthome/ic-design.png" class="lazy img-fluid" alt="icon">
+                            <p class="head-text poppins">
+                                Design, System Integration and Technical Support
+                            </p>
+                            <p class="desc poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range of aspects of
+                                residential and commercial applications: including Security & Control.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 item-gs">
+                        <div class="box-iconic">
+                            <img src="assets/images/smarthome/ic-idea.png" class="lazy img-fluid" alt="icon">
+                            <p class="head-text poppins">Experiences and Domain Expertise</p>
+                            <p class="desc poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range of aspects of
+                                residential and commercial applications: including Security & Control.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 item-gs">
+                        <div class="box-iconic">
+                            <img src="assets/images/smarthome/ic-positive.png" class="lazy img-fluid" alt="icon">
+                            <p class="head-text poppins">Positive Customer Experiences</p>
+                            <p class="desc poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range of aspects of
+                                residential and commercial applications: including Security & Control.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,80 +282,140 @@
 
     <section class="section-three py-5">
         <div class="container">
-            <h1 class="title-head text-center mont-bold">TITLE LOREM IPSUM</h1>
-            <!-- Swiper -->
+            <p class="title-head text-center">What Customer Saying</p>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="assets/images/ic-quotes.png" class="lazy img-fluid ic-quotes" alt="quotes">
-                        <div class="text-name">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore.
+                        <div class="card mb-4">
+                            <img src="assets/images/smarthome/ic-quotes.png" class="lazy img-fluid quotes" alt="icon">
+                            <div class="text-review poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/images/smarthome/user-herman.png" class="lazy img-fluid user"
+                                    alt="user">
+                                <p class="card-name poppins bold">
+                                    Herman Priyadi
+                                </p>
+                                <p class="card-position poppins">
+                                    Business Development - PT. Binamandiri Asri
+                                    Lestari Hotel Swissbell Express Cilegon
+                                </p>
+                                <img src="assets/images/smarthome/bg-wave-1.png" class="lazy img-fluid wave" alt="wave">
+                            </div>
                         </div>
-                        <div class="name mont-light">FullName 1</div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/ic-quotes.png" class="lazy img-fluid ic-quotes" alt="quotes">
-                        <div class="text-name">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore.
+                        <div class="card mb-4">
+                            <img src="assets/images/smarthome/ic-quotes.png" class="lazy img-fluid quotes" alt="icon">
+                            <div class="text-review poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/images/smarthome/user-natasha.png" class="lazy img-fluid user"
+                                    alt="user">
+                                <p class="card-name poppins bold">
+                                    Natasha Wilson
+                                </p>
+                                <p class="card-position poppins">
+                                    Chairman - Hotel Royal Tulip Darmo
+                                    Surabaya Jawa Timur
+                                </p>
+                                <img src="assets/images/smarthome/bg-wave-2.png" class="lazy img-fluid wave" alt="wave">
+                            </div>
                         </div>
-                        <div class="name mont-light">FullName 2</div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/ic-quotes.png" class="lazy img-fluid ic-quotes" alt="quotes">
-                        <div class="text-name">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore.
+                        <div class="card mb-4">
+                            <img src="assets/images/smarthome/ic-quotes.png" class="lazy img-fluid quotes" alt="icon">
+                            <div class="text-review poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/images/smarthome/user-angela.png" class="lazy img-fluid user"
+                                    alt="user">
+                                <p class="card-name poppins bold">
+                                    Anggela Santos
+                                </p>
+                                <p class="card-position poppins">
+                                    Founder & Managing Director - Juni
+                                    Group Jakarta
+                                </p>
+                                <img src="assets/images/smarthome/bg-wave-3.png" class="lazy img-fluid wave" alt="wave">
+                            </div>
                         </div>
-                        <div class="name mont-light">FullName 3</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mb-4">
+                            <img src="assets/images/smarthome/ic-quotes.png" class="lazy img-fluid quotes" alt="icon">
+                            <div class="text-review poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/images/smarthome/user-herman.png" class="lazy img-fluid user"
+                                    alt="user">
+                                <p class="card-name poppins bold">
+                                    Herman Priyadi 2
+                                </p>
+                                <p class="card-position poppins">
+                                    Business Development - PT. Binamandiri Asri
+                                    Lestari Hotel Swissbell Express Cilegon
+                                </p>
+                                <img src="assets/images/smarthome/bg-wave-1.png" class="lazy img-fluid wave" alt="wave">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mb-4">
+                            <img src="assets/images/smarthome/ic-quotes.png" class="lazy img-fluid quotes" alt="icon">
+                            <div class="text-review poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/images/smarthome/user-natasha.png" class="lazy img-fluid user"
+                                    alt="user">
+                                <p class="card-name poppins bold">
+                                    Natasha Wilson 2
+                                </p>
+                                <p class="card-position poppins">
+                                    Chairman - Hotel Royal Tulip Darmo
+                                    Surabaya Jawa Timur
+                                </p>
+                                <img src="assets/images/smarthome/bg-wave-2.png" class="lazy img-fluid wave" alt="wave">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mb-4">
+                            <img src="assets/images/smarthome/ic-quotes.png" class="lazy img-fluid quotes" alt="icon">
+                            <div class="text-review poppins">
+                                We offer a complete, state of the art, and affordable Smart Home systems and devices to
+                                cover wide range
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/images/smarthome/user-angela.png" class="lazy img-fluid user"
+                                    alt="user">
+                                <p class="card-name poppins bold">
+                                    Anggela Santos 2
+                                </p>
+                                <p class="card-position poppins">
+                                    Founder & Managing Director - Juni
+                                    Group Jakarta
+                                </p>
+                                <img src="assets/images/smarthome/bg-wave-3.png" class="lazy img-fluid wave" alt="wave">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
-
-    <section class="section-four bg-white py-5">
-        <div class="container">
-            <div class="head-title text-center">
-                <h1 class="title-section mont-bold">TITLE LOREM IPSUM</h1>
-                <p class="desc-title">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="form-bottom">
-                <form class="form-inline">
-                    <div class="form-group col-md-4 px-3">
-                        <input type="text" class="form-control mont-light radius-0" id="nameBottom"
-                            aria-describedby="name" placeholder="Full Name">
-                    </div>
-                    <div class="form-group col-md-4 px-3">
-                        <input type="email" class="form-control mont-light radius-0" id="emailBottom"
-                            aria-describedby="email" placeholder="name@email.com">
-                    </div>
-                    <div class="form-group col-md-4 px-3">
-                        <select class="form-select mont-light radius-0" id="selectCustom">
-                            <option>Lorem Ipsum</option>
-                            <option>Lorem Ipsum</option>
-                            <option>Lorem Ipsum</option>
-                            <option>Lorem Ipsum</option>
-                            <option>Lorem Ipsum</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2 text-center">
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-secondary mont-light radius-0">Send</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
 
     <footer>
         <div class="container">
@@ -430,17 +548,25 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        let swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".jumbotron .mySwiper", {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 0,
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+        });
+
+        var swiper = new Swiper(".section-three .mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
         });
     </script>
