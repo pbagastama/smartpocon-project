@@ -334,10 +334,14 @@ body#homePage {
     margin: 2rem 0 0;
     padding: 2rem 0;
 
-    @media (max-width: 768px) {
-      padding: 0 2rem;
-      margin-bottom: 0;
-      height: 85vh;
+    @media (max-width: 576px) {
+      padding: 0;
+      height: auto;
+      margin: 3rem 0 0;
+    }
+
+    @media (max-width: 320px) {
+      margin: 2.5rem 0 0;
     }
 
     .container-fluid {
@@ -381,6 +385,15 @@ body#homePage {
             padding: 4rem 6.5rem;
             flex-direction: column;
 
+            @media (max-width: 576px) {
+              padding: 4rem 1.25rem;
+              height: 85vh;
+            }
+
+            @media (max-width: 320px) {
+              padding: 2.5rem 1.25rem;
+            }
+
             img.cover {
               position: absolute;
               left: 0;
@@ -388,6 +401,16 @@ body#homePage {
               z-index: 0;
               width: 100%;
               height: auto;
+
+              @media (max-width: 576px) {
+                height: 75vh;
+                object-fit: cover;
+                object-position: left;
+              }
+
+              @media (max-width: 320px) {
+                height: 80vh;
+              }
             }
 
             .desc-banner {
@@ -402,6 +425,10 @@ body#homePage {
                 font-weight: bold;
                 color: #fff;
                 text-align: left;
+
+                @media (max-width: 576px) {
+                  font-size: 2.5rem;
+                }
               }
 
               .text-desc {
@@ -414,6 +441,10 @@ body#homePage {
                 color: #f0f0f0;
                 text-align: left;
                 opacity: 0.8;
+
+                @media (max-width: 576px) {
+                  width: 85%;
+                }
               }
               .box-button {
                 text-align: left;
@@ -440,6 +471,10 @@ body#homePage {
           .swiper-pagination {
             bottom: 150px;
 
+            @media (max-width: 576px) {
+              bottom: 100px;
+            }
+
             .swiper-pagination-bullet {
               width: 60px;
               height: 5px;
@@ -465,10 +500,23 @@ body#homePage {
         margin: -8.5em 0rem 0;
         z-index: 1;
 
+        @media (max-width: 576px) {
+          padding: 0 2rem;
+          margin: -5rem 0 0;
+        }
+
+        @media (max-width: 375px) {
+          padding: 0 1.25rem;
+        }
+
         .text-form-top {
           background: #f7fff7;
           color: #042306;
           padding: 1.25rem 2rem;
+
+          @media (max-width: 320px) {
+            padding: 1.25rem;
+          }
 
           .head-text {
             font-size: 1rem;
@@ -486,9 +534,17 @@ body#homePage {
           padding: 1rem 2rem 2rem;
           border-radius: 0 0 4px 4px;
 
+          @media (max-width: 320px) {
+            padding: 1rem 1.25rem 2rem;
+          }
+
           .form-group {
             margin-bottom: 1.25rem;
             padding-right: 1rem;
+
+            @media (max-width: 576px) {
+              padding-right: 0;
+            }
 
             label {
               color: #262626;
@@ -527,13 +583,27 @@ body#homePage {
     color: #707070;
     margin: 0;
 
-    h1.title-head {
-      font-size: 1.5rem;
-      margin: 0 0 2rem;
+    @media (max-width: 576px) {
+      padding-top: 0 !important;
+    }
 
-      @media (min-width: 768px) {
-        font-size: 2.5rem;
-        margin: 2rem 0;
+    @media (max-width: 320px) {
+      padding-top: 4rem !important;
+    }
+
+    img.baloon {
+      position: absolute;
+      left: 0;
+      top: -8%;
+      width: 85px;
+
+      @media (max-width: 375px) {
+        top: -4%;
+        width: 75px;
+      }
+
+      @media (max-width: 320px) {
+        top: 4%;
       }
     }
 
@@ -544,6 +614,10 @@ body#homePage {
       text-align: center;
       padding: 1rem 0 4rem;
       border-bottom: 1px solid #d9d9d9;
+
+      @media (max-width: 576px) {
+        padding: 1rem 0 2rem;
+      }
 
       .item-gs {
         padding: 0 1.25rem;
@@ -556,6 +630,13 @@ body#homePage {
             padding: 0.75rem 0 1rem;
             margin: 0;
           }
+
+          p.desc {
+            @media (max-width: 576px) {
+              margin: 0 auto 2rem;
+              width: 70%;
+            }
+          }
         }
       }
     }
@@ -563,6 +644,10 @@ body#homePage {
 
   section.section-two {
     position: relative;
+
+    @media (max-width: 576px) {
+      padding-top: 0 !important;
+    }
 
     img.baloon {
       position: absolute;
@@ -585,6 +670,14 @@ body#homePage {
       padding: 3rem 4rem 1.5rem;
       border-radius: 4px;
 
+      @media (max-width: 576px) {
+        padding: 3rem 1.5rem 1rem;
+      }
+
+      @media (max-width: 320px) {
+        padding: 3rem 1rem 1rem;
+      }
+
       .item-gs {
         padding: 0 1.5rem;
 
@@ -605,6 +698,10 @@ body#homePage {
             line-height: 26px;
             width: 80%;
             margin: 0 auto;
+
+            @media (max-width: 375px) {
+              width: 90%;
+            }
           }
         }
       }
@@ -614,17 +711,39 @@ body#homePage {
   section.section-three {
     position: relative;
 
+    @media (max-width: 576px) {
+      padding-bottom: 4rem !important;
+    }
+
     img.baloon {
       position: absolute;
       right: 0;
       top: -2%;
       width: auto;
       z-index: 3;
+
+      @media (max-width: 576px) {
+        width: 85px;
+        top: -5%;
+      }
     }
 
     p.title-head {
       font-size: 1.85rem;
       margin: 2rem 0;
+
+      @media (max-width: 576px) {
+        font-size: 1.75rem;
+        margin: 2rem auto 1rem;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 1.25rem;
+      }
     }
 
     .swiper {
@@ -634,9 +753,13 @@ body#homePage {
       margin-right: auto;
       color: #707070;
 
-      @media (max-width: 768px) {
-        height: 50%;
+      @media (max-width: 576px) {
+        height: auto;
       }
+
+      // @media (max-width: 375px) {
+      //   height: 78vh;
+      // }
 
       .swiper-slide {
         text-align: center;
@@ -677,6 +800,11 @@ body#homePage {
               right: 0;
               width: 100%;
               z-index: 0;
+
+              @media (max-width: 375px) {
+                object-fit: cover;
+                height: 185px;
+              }
             }
 
             img.user {
@@ -716,6 +844,14 @@ body#homePage {
       .swiper-pagination {
         bottom: 40px;
 
+        @media (max-width: 576px) {
+          bottom: 0px;
+        }
+
+        @media (max-width: 375px) {
+          bottom: -16px;
+        }
+
         .swiper-pagination-bullet {
           width: 50px;
           height: 5px;
@@ -723,6 +859,10 @@ body#homePage {
           display: inline-block;
           background: #03ac0e;
           opacity: 0.3;
+
+          @media (max-width: 576px) {
+            margin-bottom: 1rem;
+          }
         }
 
         .swiper-pagination-bullet-active {
@@ -743,10 +883,14 @@ body#productPage {
     margin: 2rem 0 0;
     padding: 2rem 0;
 
-    @media (max-width: 768px) {
-      padding: 0 2rem;
-      margin-bottom: 0;
-      height: 85vh;
+    @media (max-width: 576px) {
+      padding: 0;
+      height: auto;
+      margin: 3rem 0 0;
+    }
+
+    @media (max-width: 320px) {
+      margin: 2.5rem 0 0;
     }
 
     .container-fluid {
@@ -790,6 +934,15 @@ body#productPage {
             padding: 4rem 6.5rem;
             flex-direction: column;
 
+            @media (max-width: 576px) {
+              padding: 4rem 1.25rem;
+              height: 85vh;
+            }
+
+            @media (max-width: 320px) {
+              padding: 2.5rem 1.25rem;
+            }
+
             img.cover {
               position: absolute;
               left: 0;
@@ -797,6 +950,16 @@ body#productPage {
               z-index: 0;
               width: 100%;
               height: auto;
+
+              @media (max-width: 576px) {
+                height: 75vh;
+                object-fit: cover;
+                object-position: left;
+              }
+
+              @media (max-width: 320px) {
+                height: 80vh;
+              }
             }
 
             .desc-banner {
@@ -811,6 +974,10 @@ body#productPage {
                 font-weight: bold;
                 color: #fff;
                 text-align: left;
+
+                @media (max-width: 576px) {
+                  font-size: 2.5rem;
+                }
               }
 
               .text-desc {
@@ -823,6 +990,10 @@ body#productPage {
                 color: #f0f0f0;
                 text-align: left;
                 opacity: 0.8;
+
+                @media (max-width: 576px) {
+                  width: 85%;
+                }
               }
               .box-button {
                 text-align: left;
@@ -849,6 +1020,10 @@ body#productPage {
           .swiper-pagination {
             bottom: 150px;
 
+            @media (max-width: 576px) {
+              bottom: 100px;
+            }
+
             .swiper-pagination-bullet {
               width: 60px;
               height: 5px;
@@ -874,10 +1049,23 @@ body#productPage {
         margin: -8.5em 0rem 0;
         z-index: 1;
 
+        @media (max-width: 576px) {
+          padding: 0 2rem;
+          margin: -5rem 0 0;
+        }
+
+        @media (max-width: 375px) {
+          padding: 0 1.25rem;
+        }
+
         .text-form-top {
           background: #f7fff7;
           color: #042306;
           padding: 1.25rem 2rem;
+
+          @media (max-width: 320px) {
+            padding: 1.25rem;
+          }
 
           .head-text {
             font-size: 1rem;
@@ -895,9 +1083,17 @@ body#productPage {
           padding: 1rem 2rem 2rem;
           border-radius: 0 0 4px 4px;
 
+          @media (max-width: 320px) {
+            padding: 1rem 1.25rem 2rem;
+          }
+
           .form-group {
             margin-bottom: 1.25rem;
             padding-right: 1rem;
+
+            @media (max-width: 576px) {
+              padding-right: 0;
+            }
 
             label {
               color: #262626;
@@ -946,6 +1142,13 @@ body#productPage {
     .nav-pills {
       li.nav-item {
         margin: 0 1rem 2rem;
+
+        @media (max-width: 576px) {
+          display: flex;
+          justify-content: center;
+          width: 85%;
+        }
+
         .nav-link {
           background: #f9f9f9;
           color: #262626;
@@ -956,6 +1159,10 @@ body#productPage {
           -moz-border-radius: 2px;
           -ms-border-radius: 2px;
           -o-border-radius: 2px;
+
+          @media (max-width: 576px) {
+            width: 100%;
+          }
         }
 
         .nav-link.active {
