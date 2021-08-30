@@ -1394,13 +1394,19 @@ body#productPage {
 // ======= End Page Products ======= //
 
 // ======= Page About ======= //
-body#acquisitionPage {
+body#aboutPage {
   .navbar-dark .navbar-brand.museo {
     color: #707070 !important;
   }
 
   section.banner-jumbo {
     position: relative;
+    height: 100vh;
+
+    @media (max-width: 576px) {
+      height: auto;
+      padding-top: 5rem;
+    }
 
     .container {
       padding: 0;
@@ -1409,6 +1415,32 @@ body#acquisitionPage {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: 576px) {
+        height: calc(35vh - 56px);
+      }
+
+      img.cover-banner {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        z-index: 0;
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        object-position: top;
+
+        @media (max-width: 576px) {
+          top: 28%;
+          height: auto;
+          object-fit: contain;
+          object-position: center;
+        }
+
+        @media (max-width: 320px) {
+          top: 35%;
+        }
+      }
 
       h1.title-banner {
         font-size: 2.5rem;
@@ -1423,354 +1455,353 @@ body#acquisitionPage {
           font-size: 6rem;
         }
       }
-
-      button.btn-secondary {
-        background: transparent;
-        color: #707070;
-        border: 1px solid #707070;
-        padding: 0.5rem 2rem;
-      }
-    }
-
-    img.ics-arrow {
-      width: 40px;
-      position: absolute;
-      bottom: 1.5rem;
-      left: 45%;
-      margin-right: -50%;
-      transform: translate(-50%, 0);
-      animation: float 1s ease-in-out infinite;
-
-      @media (min-width: 768px) {
-        left: 50%;
-      }
     }
   }
 
   section.section-one {
-    padding: 4rem 0 0;
+    position: relative;
+    padding: 5rem 0 3rem;
     color: #707070;
 
-    .box-item {
-      margin-bottom: 3rem;
-      text-align: center;
+    @media (max-width: 576px) {
+      padding: 4rem 0;
+    }
 
-      @media (min-width: 768px) {
-        text-align: left;
+    @media (max-width: 320px) {
+      padding: 2rem 0;
+    }
+
+    img.baloon {
+      position: absolute;
+      left: 0;
+      top: 15%;
+      width: 100px;
+
+      @media (max-width: 576px) {
+        top: 0;
+        width: 75px;
       }
 
-      h5.title {
-        font-size: 1.5rem;
-
-        @media (min-width: 375px) {
-          font-size: 2rem;
-        }
-
-        @media (min-width: 768px) {
-          font-size: 2.25rem;
-        }
-      }
-
-      p.text-desc {
-        margin-bottom: 1.5rem;
-
-        @media (min-width: 768px) {
-          margin-bottom: 1.75rem;
-        }
-      }
-
-      button.btn-secondary {
-        background: transparent;
-        color: #707070;
-        border: 1px solid #707070;
-        padding: 0.5rem 2rem;
+      @media (max-width: 320px) {
+        width: 50px;
       }
     }
 
-    .box-item-left {
-      margin-bottom: 1.25rem;
-      text-align: center;
+    .about {
+      padding: 2rem 0;
 
-      @media (min-width: 768px) {
-        text-align: left;
-      }
+      p.title-about {
+        font-size: 3.25rem;
+        font-weight: 500;
+        color: #042306;
 
-      img.ics-ask {
-        width: 50px;
-        margin-bottom: 1rem;
-
-        @media (min-width: 768px) {
-          width: 60px;
+        @media (max-width: 320px) {
+          font-size: 1.5rem;
         }
-      }
 
-      i.bi {
-        font-size: 4.5rem;
-        margin-bottom: 1rem;
-
-        @media (min-width: 768px) {
-          font-size: 4rem;
+        @media (max-width: 576px) {
+          font-size: 2rem;
         }
       }
 
       p.text-desc {
+        color: #5e5e5e;
         width: 100%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
 
-        @media (min-width: 768px) {
-          width: 80%;
+        @media (max-width: 576px) {
+          width: 85%;
+          font-size: 1rem;
+          margin: 0 auto;
+          line-height: 1.75rem;
+        }
+
+        @media (max-width: 320px) {
+          width: 90%;
         }
       }
     }
   }
 
   section.section-two {
-    padding: 4rem 0 2rem;
-    color: #707070;
+    position: relative;
+    padding: 5rem 0;
+    color: #5e5e5e;
+    background: #f5fff6;
 
-    .item-cols {
-      margin-bottom: 1rem;
+    @media (max-width: 576px) {
+      padding: 2rem 0 5rem;
+    }
 
-      .box-img {
-        h5.title {
-          font-size: 1.5rem;
-          margin-bottom: 0;
-          text-align: center;
+    img.baloon {
+      position: absolute;
+      right: 0;
+      bottom: 0%;
+      width: 100px;
 
-          @media (min-width: 375px) {
-            font-size: 2rem;
-          }
-
-          @media (min-width: 768px) {
-            font-size: 2.25rem;
-            text-align: left;
-          }
-        }
+      @media (max-width: 576px) {
+        bottom: 0;
+        width: 75px;
       }
     }
 
-    .testimonial {
+    .about {
       padding: 2rem 0;
 
-      h1.title-testi {
-        font-size: 1.5rem;
+      p.title-about {
+        font-size: 3.25rem;
+        font-weight: 500;
+        color: #042306;
 
-        @media (min-width: 375px) {
-          font-size: 2rem;
+        @media (max-width: 320px) {
+          font-size: 1.5rem;
         }
 
-        @media (min-width: 768px) {
-          font-size: 2.25rem;
+        @media (max-width: 576px) {
+          font-size: 2rem;
         }
       }
 
       p.text-desc {
+        color: #5e5e5e;
         width: 100%;
-        margin: 1.5rem auto;
-        font-size: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
 
-        @media (min-width: 768px) {
+        @media (max-width: 576px) {
           width: 85%;
           font-size: 1rem;
-        }
-      }
-
-      button.btn-secondary {
-        background: #bcbcbc;
-        border-color: #bcbcbc;
-        padding: 0.75rem 1.25rem;
-
-        @media (min-width: 768px) {
-          padding: 0.75rem 2.5rem;
-        }
-      }
-    }
-  }
-
-  section.section-three {
-    position: relative;
-    padding: 2rem 0;
-
-    @media (min-width: 768px) {
-      padding: 4rem 0;
-    }
-
-    h1.title-head {
-      color: #707070;
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-
-      @media (min-width: 375px) {
-        font-size: 2rem;
-      }
-
-      @media (min-width: 768px) {
-        font-size: 2.5rem;
-        margin-bottom: 2.5rem;
-      }
-    }
-
-    .swiper {
-      width: 100%;
-      height: 50%;
-      margin-left: auto;
-      margin-right: auto;
-      color: #707070;
-
-      @media (min-width: 375px) {
-        height: 35%;
-      }
-
-      @media (min-width: 768px) {
-        height: 40%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        padding: 0.5rem 2.5rem 0.5rem 4.25rem;
-        flex-direction: column;
-
-        @media (min-width: 768px) {
-          padding: 2.5rem 7rem;
+          margin: 0 auto;
+          line-height: 1.75rem;
         }
 
-        img.ic-quotes {
-          position: absolute;
-          width: 30px;
-          left: -8%;
-          top: -18%;
-
-          @media (min-width: 768px) {
-            width: 50px;
-            left: -8%;
-            top: -25%;
-          }
+        @media (max-width: 320px) {
+          width: 90%;
         }
-
-        .text-name {
-          font-family: "Playfair Display", sans-serif;
-          width: 100%;
-          margin-bottom: 3rem;
-          font-size: 0.75rem;
-          color: #707070;
-          text-align: left;
-
-          @media (min-width: 768px) {
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-          }
-        }
-
-        .name {
-          position: absolute;
-          bottom: 10%;
-          right: 10%;
-          font-size: 0.85rem;
-          color: #707070;
-
-          @media (min-width: 768px) {
-            bottom: -25%;
-            right: 5%;
-            font-size: 1.25rem;
-          }
-        }
-
-        .swiper {
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-
-      .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        border-radius: 100%;
-        background: #fff;
-        opacity: 1;
-        border: 1px solid #707070;
-
-        @media (min-width: 768px) {
-          width: 12px;
-          height: 12px;
-        }
-      }
-
-      .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        border-radius: 100%;
-        background: #fff;
-        opacity: 1;
-        border: 1px solid #707070;
-
-        @media (min-width: 768px) {
-          width: 12px;
-          height: 12px;
-        }
-      }
-
-      .swiper-pagination-bullet-active {
-        background: #707070;
-      }
-
-      .swiper-button-next,
-      .swiper-button-prev {
-        color: #707070;
-
-        &:focus {
-          outline: 0;
-          box-shadow: none;
-        }
-
-        &:after {
-          font-size: 2rem;
-
-          @media (min-width: 768px) {
-            font-size: 2.75rem;
-          }
-        }
-      }
-
-      .swiper-button-next {
-        right: 0;
-
-        @media (min-width: 768px) {
-          right: 10px;
-        }
-      }
-
-      .swiper-button-prev {
-        left: 0;
-
-        @media (min-width: 768px) {
-          left: 10px;
-        }
-      }
-    }
-  }
-
-  section.section-four {
-    padding: 4rem 0;
-    color: #707070;
-
-    h1.title-bottom {
-      font-size: 2.5rem;
-
-      @media (min-width: 375px) {
-        font-size: 3rem;
-      }
-
-      @media (min-width: 768px) {
-        font-size: 5rem;
       }
     }
   }
 }
+// ======= End Page About ======= //
 
-// ======= End Pages Acquisition ======= //
+// ======= Page Contact ======= //
+body#contactPage {
+  .navbar-dark .navbar-brand.museo {
+    color: #707070 !important;
+  }
+
+  section.banner-jumbo {
+    position: relative;
+    height: 100vh;
+
+    @media (max-width: 576px) {
+      height: auto;
+      padding-top: 5rem;
+    }
+
+    .container {
+      padding: 0;
+      height: calc(100vh - 56px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 576px) {
+        height: calc(35vh - 56px);
+      }
+
+      img.cover-banner {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        z-index: 0;
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        object-position: top;
+
+        @media (max-width: 576px) {
+          top: 28%;
+          height: auto;
+          object-fit: contain;
+          object-position: center;
+        }
+
+        @media (max-width: 320px) {
+          top: 35%;
+        }
+      }
+
+      h1.title-banner {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+
+        @media (min-width: 375px) {
+          font-size: 3rem;
+        }
+
+        @media (min-width: 768px) {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+
+  section.section-one {
+    position: relative;
+    padding: 5rem 0 3rem;
+    color: #707070;
+
+    @media (max-width: 576px) {
+      padding: 4rem 0;
+    }
+
+    @media (max-width: 320px) {
+      padding: 2rem 0;
+    }
+
+    img.baloon {
+      position: absolute;
+      left: 0;
+      top: 15%;
+      width: 100px;
+
+      @media (max-width: 576px) {
+        top: 0;
+        width: 75px;
+      }
+
+      @media (max-width: 320px) {
+        width: 50px;
+      }
+    }
+
+    img.baloon-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0%;
+      width: 100px;
+
+      @media (max-width: 576px) {
+        bottom: 0;
+        width: 75px;
+      }
+    }
+
+    .about {
+      padding: 2rem 0;
+
+      p.title-about {
+        font-size: 3.25rem;
+        font-weight: bold;
+        color: #042306;
+
+        @media (max-width: 320px) {
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 2rem;
+        }
+      }
+
+      p.title-office {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #042306;
+
+        @media (max-width: 320px) {
+          font-size: 1.15rem;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 1.25rem;
+        }
+      }
+
+      p.text-desc {
+        color: #5e5e5e;
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+        @media (max-width: 576px) {
+          width: 80%;
+          font-size: 1rem;
+          margin: 0 auto;
+          line-height: 1.75rem;
+        }
+
+        @media (max-width: 320px) {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  section.section-two {
+    position: relative;
+    padding: 5rem 0;
+    color: #5e5e5e;
+    background: #f5fff6;
+
+    @media (max-width: 576px) {
+      padding: 2rem 0 5rem;
+    }
+
+    img.baloon {
+      position: absolute;
+      right: 0;
+      bottom: 0%;
+      width: 100px;
+
+      @media (max-width: 576px) {
+        bottom: 0;
+        width: 75px;
+      }
+    }
+
+    .about {
+      padding: 2rem 0;
+
+      p.title-about {
+        font-size: 3.25rem;
+        font-weight: 500;
+        color: #042306;
+
+        @media (max-width: 320px) {
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 2rem;
+        }
+      }
+
+      p.text-desc {
+        color: #5e5e5e;
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+        @media (max-width: 576px) {
+          width: 85%;
+          font-size: 1rem;
+          margin: 0 auto;
+          line-height: 1.75rem;
+        }
+
+        @media (max-width: 320px) {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+// ======= End Page Contact ======= //
 
 footer {
   font-family: "Poppins", sans-serif !important;
