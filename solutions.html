@@ -55,8 +55,8 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body id="contactPage">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container-fluid d-flex justify-content-between">
             <a class="navbar-brand d-flex align-items-center poppins" href="index.html">
                 <img id="imageLogo" src="assets/images/smarthome/logo-new.png" class="lazy img-fluid logo" alt="logo">
@@ -287,8 +287,10 @@
                             <p class="head-text">Office 2</p>
                             <p class="address">
                                 Indonesia Office :<br>
-                                PT. Graha Smart Indonesia South Quarter Tower A, Lantai 18<br>
-                                Jl. RA Kartini Kav 8, Jakarta Selatan, Indonesia
+                                PT. Graha Smart Indonesia<br>
+                                South Quarter Office Tower A, 18th Floor<br>
+                                Jl. R.A. Kartini Kav 8. Cilandak Barat<br>
+                                Jakarta Selatan, Indonesia 12430
                             </p>
                         </div>
                     </div>
@@ -318,21 +320,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        let swiper = new Swiper('.mySwiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <script src="js/index.js"></script>
 
 </body>
 

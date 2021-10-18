@@ -56,8 +56,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
-        <div class="container d-flex justify-content-between">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid d-flex justify-content-between">
             <a class="navbar-brand d-flex align-items-center poppins" href="index.html">
                 <img id="imageLogo" src="assets/images/smarthome/logo-new.png" class="lazy img-fluid logo" alt="logo">
             </a>
@@ -70,16 +70,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="solutions.html">Solutions</a>
+                        <a class="nav-link" href="#">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#ourWorks">Our Works</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -94,42 +97,42 @@
                         <li class="progress-bar__dot full poppins">
                             1
                             <div class="title-step poppins">
-                                Pilih Produk
+                                Choose Products
                             </div>
                         </li>
                         <li class="progress-bar__connector poppins"></li>
                         <li class="progress-bar__dot poppins">
                             2
                             <div class="title-step poppins">
-                                Jumlah Lantai & Ruangan
+                                Number of Floors & Rooms
                             </div>
                         </li>
                         <li class="progress-bar__connector poppins"></li>
                         <li class="progress-bar__dot poppins">
                             3
                             <div class="title-step poppins">
-                                Pilih Budget
+                                Choose Budget
                             </div>
                         </li>
                         <li class="progress-bar__connector poppins"></li>
                         <li class="progress-bar__dot poppins">
                             4
                             <div class="title-step poppins">
-                                Pilih System
+                                Choose System
                             </div>
                         </li>
                         <li class="progress-bar__connector poppins"></li>
                         <li class="progress-bar__dot poppins">
                             5
                             <div class="title-step poppins">
-                                Isi Form Data
+                                Fill in the Data Form
                             </div>
                         </li>
                     </ul>
 
                     <div class="step step1">
                         <div class="title-step text-center">
-                            <p class="text poppins">Kamu mau Cari apa?</p>
+                            <p class="text poppins">What are you looking for?</p>
                         </div>
                         <div class="top mb-4">
                             <div class="form-check form-check-inline poppins">
@@ -185,7 +188,7 @@
 
                     <div class="step step2 hidden">
                         <div class="title-step text-center">
-                            <p class="text poppins">Pilih jumlah lantai & ruangan ?</p>
+                            <p class="text poppins">Choose the number of floors and rooms?</p>
                         </div>
                         <div class="top mb-4">
                             <div class="form-check form-check-inline poppins">
@@ -241,7 +244,7 @@
 
                     <div class="step step3 hidden">
                         <div class="title-step text-center">
-                            <p class="text poppins">Pilih budget kamu ?</p>
+                            <p class="text poppins">Choose your budget?</p>
                         </div>
                         <div class="top mb-4">
                             <div class="form-check form-check-inline poppins">
@@ -297,7 +300,7 @@
 
                     <div class="step step4 hidden">
                         <div class="title-step text-center">
-                            <p class="text poppins">Pilih system yang diinginkan ?</p>
+                            <p class="text poppins">Choose the system you want?</p>
                         </div>
                         <div class="top mb-4">
                             <div class="form-check form-check-inline poppins">
@@ -380,35 +383,35 @@
                                 <label for="inputName" class="col-2 col-md-2 col-form-label poppins">Name</label>
                                 <div class="col-10 col-md-10">
                                     <input type="text" class="form-control poppins" id="inputName"
-                                        placeholder="Masukan Nama Anda">
+                                        placeholder="Your Name">
                                 </div>
                             </div>
                             <div class="mb-4 row">
                                 <label for="inputPhone" class="col-2 col-md-2 col-form-label poppins">Phone</label>
                                 <div class="col-10 col-md-10">
                                     <input type="number" class="form-control poppins" id="inputPhone"
-                                        placeholder="Masukan Phone Anda">
+                                        placeholder="Your Phone">
                                 </div>
                             </div>
                             <div class="mb-4 row">
                                 <label for="inputEmail" class="col-2 col-md-2 col-form-labe poppins">Email</label>
                                 <div class="col-10 col-md-10">
                                     <input type="email" class="form-control poppins" id="inputEmail"
-                                        placeholder="Masukan Email Anda">
+                                        placeholder="Your Email">
                                 </div>
                             </div>
                             <div class="mb-4 row">
                                 <label for="inputCity" class="col-2 col-md-2 col-form-label poppins">City</label>
                                 <div class="col-10 col-md-10">
                                     <input type="text" class="form-control poppins" id="inpuCity"
-                                        placeholder="Masukan Kota Anda">
+                                        placeholder="Please enter your city">
                                 </div>
                             </div>
                             <div class="mb-4 row">
                                 <label for="inputCountry" class="col-2 col-md-2 col-form-label poppins">Country</label>
                                 <div class="col-10 col-md-10">
                                     <input type="text" class="form-control poppins" id="inpuCountry"
-                                        placeholder="Masukan Negara Anda">
+                                        placeholder="Please enter your country">
                                 </div>
                             </div>
                         </div>
@@ -476,8 +479,10 @@
                             <p class="head-text">Office 2</p>
                             <p class="address">
                                 Indonesia Office :<br>
-                                PT. Graha Smart Indonesia South Quarter Tower A, Lantai 18<br>
-                                Jl. RA Kartini Kav 8, Jakarta Selatan, Indonesia
+                                PT. Graha Smart Indonesia<br>
+                                South Quarter Office Tower A, 18th Floor<br>
+                                Jl. R.A. Kartini Kav 8. Cilandak Barat<br>
+                                Jakarta Selatan, Indonesia 12430
                             </p>
                         </div>
                     </div>
@@ -507,6 +512,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
         const previousButton = document.getElementById("previous");
         const nextButton = document.getElementById("next");

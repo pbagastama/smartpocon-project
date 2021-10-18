@@ -54,8 +54,8 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body id="homePage">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container-fluid d-flex justify-content-between">
             <a class="navbar-brand d-flex align-items-center poppins" href="index.html">
                 <img id="imageLogo" src="assets/images/smarthome/logo-new.png" class="lazy img-fluid logo" alt="logo">
@@ -90,9 +90,9 @@
 
     <div class="page-home">
         <section class="jumbotron banner">
-            <div class="container">
-                <div class="row m-0">
-                    <div class="col-12 col-md-6 box-banner">
+            <div class="container-fluid">
+                <div class="row m-0 mobile">
+                    <div class="col-12 col-md-5 box-banner">
                         <div class="desc-banner">
                             <div class="text-head">
                                 Design You
@@ -111,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 text-banner">
+                    <div class="col-12 col-md-7 right-banner">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -121,6 +121,7 @@
                                     </span>
                                     <img src="assets/images/smarthome/banner-4.webp" class="lazy img-fluid cover"
                                         alt="cover">
+                                    <div class="black-shadow"></div>
                                 </div>
                                 <div class="swiper-slide">
                                     <span class="text-banner poppins">
@@ -129,6 +130,7 @@
                                     </span>
                                     <img src="assets/images/smarthome/banner-1.webp" class="lazy img-fluid cover"
                                         alt="cover">
+                                    <div class="black-shadow"></div>
                                 </div>
                                 <div class="swiper-slide">
                                     <span class="text-banner poppins">
@@ -137,11 +139,17 @@
                                     </span>
                                     <img src="assets/images/smarthome/banner-2.webp" class="lazy img-fluid cover"
                                         alt="cover">
+                                    <div class="black-shadow"></div>
                                 </div>
-                                <!-- <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <span class="text-banner poppins">
+                                        Automation that provides<br>
+                                        Efficiency and Convenience anytime
+                                    </span>
                                     <img src="assets/images/smarthome/banner-3.webp" class="lazy img-fluid cover"
                                         alt="cover">
-                                </div> -->
+                                    <div class="black-shadow"></div>
+                                </div>
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
@@ -290,9 +298,12 @@
                             </div>
                             <div class="card-body text-center">
                                 <div class="card-img">
-                                    <img src="assets/images/smarthome/user-herman.png" alt="user">
+                                    <img src="assets/images/smarthome/icon-people.png" alt="user">
                                 </div>
                                 <p class="card-name poppins fw-bold">Yamin C</p>
+                                <p class="card-name job-office poppins">
+                                    Head of Planning and Design Region 1<br>Summarecon Property Development
+                                </p>
                                 <img class="star-img" src="assets/images/smarthome/rate.png" alt="star">
                             </div>
                         </div>
@@ -311,9 +322,12 @@
                             </div>
                             <div class="card-body text-center">
                                 <div class="card-img">
-                                    <img src="assets/images/smarthome/user-herman.png" alt="user">
+                                    <img src="assets/images/smarthome/icon-people.png" alt="user">
                                 </div>
                                 <p class="card-name poppins fw-bold">Athusi Senno</p>
+                                <p class="card-name job-office poppins">
+                                    Founder and Managing Director<br>Juni Group Mgmt. (HK) Ltd.
+                                </p>
                                 <img class="star-img" src="assets/images/smarthome/rate.png" alt="star">
                             </div>
                         </div>
@@ -332,9 +346,13 @@
                             </div>
                             <div class="card-body text-center">
                                 <div class="card-img">
-                                    <img src="assets/images/smarthome/user-herman.png" alt="user">
+                                    <img src="assets/images/smarthome/icon-people.png" alt="user">
                                 </div>
                                 <p class="card-name poppins fw-bold">Herman Priyadi</p>
+                                <p class="card-name job-office poppins">
+                                    Business Development <br>Hotel Swissbell Express
+                                    Cilegon
+                                </p>
                                 <img class="star-img" src="assets/images/smarthome/rate.png" alt="star">
                             </div>
                         </div>
@@ -480,16 +498,30 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/images/smarthome/reference-site.webp" class="lazy img-fluid cover"
-                                alt="cover">
+                            <div class="black-shadow"></div>
+                            <img src="assets/images/smarthome/works-1.webp" class="lazy img-fluid cover" alt="cover">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/images/smarthome/reference-site.webp" class="lazy img-fluid cover"
-                                alt="cover">
+                            <div class="black-shadow"></div>
+                            <img src="assets/images/smarthome/works-2.webp" class="lazy img-fluid cover" alt="cover">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/images/smarthome/reference-site.webp" class="lazy img-fluid cover"
-                                alt="cover">
+                            <div class="black-shadow"></div>
+                            <img src="assets/images/smarthome/works-3.webp" class="lazy img-fluid cover" alt="cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="black-shadow"></div>
+                            <video class="video-works" autoplay muted loop>
+                                <source src="assets/videos/works-4.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="black-shadow"></div>
+                            <video class="video-works" autoplay muted loop>
+                                <source src="assets/videos/works-5.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -508,31 +540,6 @@
                         </a>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-md-2 d-block d-md-none">
-                    <div class="box-store">
-                        <div class="icon-store">
-                            <a href="https://www.tokopedia.com/grahasmartindo" target="_blank"
-                                rel="noopener noreferrer">
-                                <img src="assets/images/smarthome/store-tokopedia.png" class="lazy img-fluid ic-store"
-                                    alt="tokped">
-                            </a>
-                            <a href="https://shopee.co.id/grahasmartindo" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/images/smarthome/store-shopee.png" class="lazy img-fluid ic-store"
-                                    alt="shopee">
-                            </a>
-                            <a href="https://www.lazada.co.id/shop/smarthomeges/" target="_blank"
-                                rel=" noopener noreferrer">
-                                <img src="assets/images/smarthome/store-lazada.png" class="lazy img-fluid ic-store"
-                                    alt="lazada">
-                            </a>
-                            <a href="https://www.bukalapak.com/u/grahasmartindonesia/" target="_blank"
-                                rel="noopener noreferrer">
-                                <img src="assets/images/smarthome/store-bukalapak.png" class="lazy img-fluid ic-store"
-                                    alt="bukalapak">
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="col-12 col-md-6">
                     <div class="box-office">
                         <div class="icon-footer">
@@ -569,8 +576,10 @@
                             <p class="head-text">Office 2</p>
                             <p class="address">
                                 Indonesia Office :<br>
-                                PT. Graha Smart Indonesia South Quarter Tower A, Lantai 18<br>
-                                Jl. RA Kartini Kav 8, Jakarta Selatan, Indonesia
+                                PT. Graha Smart Indonesia<br>
+                                South Quarter Office Tower A, 18th Floor<br>
+                                Jl. R.A. Kartini Kav 8. Cilandak Barat<br>
+                                Jakarta Selatan, Indonesia 12430
                             </p>
                         </div>
                     </div>
@@ -585,32 +594,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-md-2 d-none d-md-flex">
-                    <div class="box-store">
-                        <div class="text-head poppins">Find Us</div>
-                        <div class="icon-store">
-                            <a href="https://www.tokopedia.com/grahasmartindo" target="_blank"
-                                rel="noopener noreferrer">
-                                <img src="assets/images/smarthome/store-tokopedia.png" class="lazy img-fluid ic-store"
-                                    alt="tokped">
-                            </a>
-                            <a href="https://shopee.co.id/grahasmartindo" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/images/smarthome/store-shopee.png" class="lazy img-fluid ic-store"
-                                    alt="shopee">
-                            </a>
-                            <a href="https://www.lazada.co.id/shop/smarthomeges/" target="_blank"
-                                rel=" noopener noreferrer">
-                                <img src="assets/images/smarthome/store-lazada.png" class="lazy img-fluid ic-store"
-                                    alt="lazada">
-                            </a>
-                            <a href="https://www.bukalapak.com/u/grahasmartindonesia/" target="_blank"
-                                rel="noopener noreferrer">
-                                <img src="assets/images/smarthome/store-bukalapak.png" class="lazy img-fluid ic-store"
-                                    alt="bukalapak">
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </footer>
@@ -627,33 +610,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".jumbotron .mySwiper", {
-            autoHeight: true,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        var swiper = new Swiper(".section-four .mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>
